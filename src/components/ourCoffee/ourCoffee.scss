@@ -1,0 +1,14 @@
+.ourCoffee {
+  min-height: 260px;
+  text-align: center;
+  background: url("../../resources/image/bg/coffe_bg.jpg") center
+    (center / cover) no-repeat;
+  &__title {
+    margin-top: 60px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    color: #ffffff;
+  }
+}

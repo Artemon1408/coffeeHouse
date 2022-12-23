@@ -1,0 +1,13 @@
+.pleasureHeader {
+  min-height: 260px;
+  background: url("../../resources/image/bg/pleasure_bg.jpg") center
+    (center / cover) no-repeat;
+  &__title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,43 @@
+.aboutCoffee {
+  min-height: 455px;
+  &__content {
+    margin: 0 auto;
+    margin-top: 70px;
+    max-width: 865px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__image {
+    margin-right: 55px;
+  }
+  &__descr {
+    &-title {
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      color: #000000;
+    }
+    &-logo {
+      margin: 21px 0 25px 0;
+      text-align: center;
+    }
+    &-text {
+      margin: 16px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      color: #000000;
+    }
+    &-text_bold {
+      font-weight: 400;
+    }
+    &-price {
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+}

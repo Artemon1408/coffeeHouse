@@ -1,0 +1,22 @@
+.ourbest {
+  min-height: 495px;
+  padding-top: 80px;
+  background: url("../../resources/image/bg/best_bg.jpg") center
+    (center / cover) no-repeat;
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #000000;
+  }
+  &__items {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

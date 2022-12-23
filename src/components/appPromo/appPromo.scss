@@ -1,0 +1,44 @@
+.promo {
+  min-height: 640px;
+  background: url("../../resources/image/bg/Main_bg.jpg") center
+    (center / cover) no-repeat;
+  &__cont {
+    margin: 0 auto;
+    margin-top: 181px;
+    text-align: center;
+    &-title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 58px;
+      color: #ffffff;
+    }
+    &-subtitle {
+      margin-top: 35px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 35px;
+      color: #ffffff;
+    }
+    &-descr {
+      margin-top: 20px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 35px;
+      color: #ffffff;
+    }
+    &-btn {
+      margin-top: 18px;
+      width: 120px;
+      height: 30px;
+      background: transparent;
+      color: #ffffff;
+      border: none;
+      border: 2px solid #fff;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+}

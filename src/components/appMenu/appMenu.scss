@@ -1,0 +1,41 @@
+.header {
+  padding-top: 30px;
+
+  &__menu {
+    display: flex;
+    align-items: flex-end;
+
+    &-link {
+      display: flex;
+      align-items: flex-end;
+      margin-right: 40px;
+      list-style-type: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.colorW {
+  color: #ffffff;
+}
+
+.menu_header {
+  justify-content: left;
+}
+
+.colorB {
+  color: #000;
+}
+.menu_center {
+  justify-content: center;
+}
