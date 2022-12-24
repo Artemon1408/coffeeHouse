@@ -69,3 +69,35 @@
     }
   }
 }
+
+@media (max-width: 815px) {
+  .beansFilter {
+    &__items {
+      grid-template-columns: repeat(2, 220px);
+      grid-template-rows: repeat(3, 260px);
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 615px) {
+  .beansFilter {
+    &__items {
+      grid-template-columns: repeat(1, 220px);
+      grid-template-rows: 260px;
+      grid-auto-rows: auto;
+      justify-content: center;
+    }
+  }
+  .search {
+    flex-direction: column;
+    &__btns {
+      button {
+        margin-top: 5px;
+        &:first-child {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

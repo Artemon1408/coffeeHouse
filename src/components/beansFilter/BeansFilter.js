@@ -3,16 +3,7 @@ import ListBeansFilter from "../listBeansFilter/ListBeansFilterItems";
 
 import "./beansFilter.scss";
 
-const BeansFilter = () => {
-  const data = [
-    { name: "AROMISTICO Coffee 1 kg", country: "Brazil", id: 1 },
-    { name: "Jacobs Coffee 1 kg", country: "Kenya", id: 2 },
-    { name: "Nescafe Coffee 2 kg", country: "Columbia", id: 3 },
-    { name: "AROMISTICO Coffee 1 kg", country: "Brazil", id: 4 },
-    { name: "Jacobs Coffee 1 kg", country: "Kenya", id: 5 },
-    { name: "Nescafe Coffee 2 kg", country: "Columbia", id: 6 },
-  ];
-
+const BeansFilter = ({ data }) => {
   const [filter, setFilter] = useState("all");
   const [term, setTerm] = useState("");
 

@@ -3,12 +3,12 @@ import OurBeans from "../../ourBeans/OurBeans";
 import OurCoffee from "../../ourCoffee/OurCoffee";
 import FooterApp from "../../footerApp/FooterApp";
 
-const CoffeePage = () => {
+const CoffeePage = ({ data }) => {
   return (
     <>
       <OurCoffee />
       <OurBeans />
-      <BeansFilter />
+      <BeansFilter data={data} />
       <FooterApp />
     </>
   );

@@ -41,3 +41,22 @@
     }
   }
 }
+
+@media (max-width: 715px) {
+  .aboutCoffee {
+    &__image {
+      margin: 0 auto;
+      text-align: center;
+      img {
+        width: 100%;
+      }
+    }
+    &__content {
+      flex-direction: column;
+      padding: 10px;
+    }
+    &__descr {
+      text-align: center;
+    }
+  }
+}

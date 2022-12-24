@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./appPromo.scss";
 import AppMenu from "../appMenu/AppMenu";
 import promoLogo from "../../resources/image/logo/promoLogo.png";
@@ -22,7 +23,9 @@ const AppPromo = () => {
             We makes every day full of energy and taste
           </div>
           <div className="promo__cont-descr">Want to try our beans?</div>
-          <button className="promo__cont-btn">More</button>
+          <Link to="/coffeepage" className="promo__cont-btn">
+            More
+          </Link>
         </div>
       </div>
     </div>

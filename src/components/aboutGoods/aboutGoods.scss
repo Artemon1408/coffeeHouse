@@ -42,3 +42,19 @@
     background: #000;
   }
 }
+
+@media (max-width: 615px) {
+  .goods {
+    &__image {
+      margin: 0 auto;
+      text-align: center;
+      img {
+        width: 100%;
+      }
+    }
+    &__about {
+      flex-direction: column;
+      padding: 10px;
+    }
+  }
+}
