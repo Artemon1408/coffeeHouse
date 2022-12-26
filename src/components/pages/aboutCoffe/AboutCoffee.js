@@ -19,7 +19,7 @@ const AboutCoffeePage = () => {
           </div>
           <div className="aboutCoffee__descr-text">
             Country:
-            <span lassName="aboutCoffee__descr-text_bold"> Brasil </span>
+            <span className="aboutCoffee__descr-text_bold"> Brasil </span>
           </div>
           <div className="aboutCoffee__descr-text">
             Description:

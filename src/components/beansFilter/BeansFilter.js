@@ -1,36 +1,11 @@
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import ListBeansFilter from "../listBeansFilter/ListBeansFilterItems";
-
+import { activeFilterChanged, searchCoffee } from "../../actions";
 import "./beansFilter.scss";
 
-const BeansFilter = ({ data }) => {
-  const [filter, setFilter] = useState("all");
-  const [term, setTerm] = useState("");
-
-  const searchCoffee = (items, term) => {
-    if (term.length === 0) {
-      return items;
-    }
-
-    return items.filter((item) => {
-      return item.name.toLowerCase().indexOf(term) > -1;
-    });
-  };
-
-  const filterPost = (items, filter) => {
-    switch (filter) {
-      case "Brazil":
-        return items.filter((item) => item.country === "Brazil");
-      case "Kenya":
-        return items.filter((item) => item.country === "Kenya");
-      case "Columbia":
-        return items.filter((item) => item.country === "Columbia");
-      default:
-        return items;
-    }
-  };
-
-  const visibleData = filterPost(searchCoffee(data, term), filter);
+const BeansFilter = () => {
+  const { term } = useSelector((state) => state);
+  const dispatch = useDispatch();
 
   return (
     <div className="beansFilter">
@@ -43,23 +18,32 @@ const BeansFilter = ({ data }) => {
             className="search__input"
             placeholder="start typing here..."
             value={term}
-            onChange={(e) => setTerm(e.target.value)}
+            onChange={(e) => dispatch(searchCoffee(e.target.value))}
           />
         </label>
         <label className="search__btns">
           Or filter
-          <button onClick={() => setFilter("Brazil")} className="search__btn">
+          <button
+            onClick={() => dispatch(activeFilterChanged("Brazil"))}
+            className="search__btn"
+          >
             Brazil
           </button>
-          <button onClick={() => setFilter("Kenya")} className="search__btn">
+          <button
+            onClick={() => dispatch(activeFilterChanged("Kenya"))}
+            className="search__btn"
+          >
             Kenya
           </button>
-          <button onClick={() => setFilter("Columbia")} className="search__btn">
+          <button
+            onClick={() => dispatch(activeFilterChanged("Columbia"))}
+            className="search__btn"
+          >
             Columbia
           </button>
         </label>
       </div>
-      <ListBeansFilter data={visibleData} />
+      <ListBeansFilter />
     </div>
   );
 };

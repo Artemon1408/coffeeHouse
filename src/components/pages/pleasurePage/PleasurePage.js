@@ -3,13 +3,13 @@ import FooterApp from "../../footerApp/FooterApp";
 import ListBeansFilter from "../../listBeansFilter/ListBeansFilterItems";
 import PleasureHeader from "../../pleasureHeader/PleasureHeader";
 
-const PleasurePage = ({ data }) => {
+const PleasurePage = () => {
   return (
     <>
       <PleasureHeader />
       <AboutGoods />
       <div className="beansFilter">
-        <ListBeansFilter data={data} />
+        <ListBeansFilter />
       </div>
 
       <FooterApp />
